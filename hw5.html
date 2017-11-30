@@ -371,12 +371,30 @@ Description: This is page provides interface on car financing comparisons.
             min: 1,
             max: 40
         },
-        downpayment: "required",
-        rebate: "required",
-        discount: "required",
-        interest: "required",
-        number_months: "required",
-        mile_per_year: "required",
+        downpayment: {
+            required: true,
+            min: 0
+        },
+        rebate: {
+            required: true,
+            min: 0
+        },
+        discount: {
+            required: true,
+            min: 0
+        },
+        interest: {
+            required: true,
+            min: 0
+        },
+        number_months: {
+            required: true,
+            min: 0
+        },
+        mile_per_year: {
+            required: true,
+            min: 0
+        },
         price_per_gallon: {
             required: true,
             min: 0.05,
@@ -434,12 +452,30 @@ Description: This is page provides interface on car financing comparisons.
            min: "Please enter value > 1",
            max: "Please enter value < 40"
         },
-        downpayment: "Downpayment is required",
-        rebate: "Rebate is required",
-        discount: "Discount is required",
-        interest: "Interest is required",
-        number_months: "# of months is required",
-        mile_per_year: "mile/year is required",
+        downpayment: {
+           required: "Downpayment is required",
+           min: "Please enter value > 0"
+        },
+        rebate: {
+           required: "Rebate is required",
+           min: "Please enter value > 0"
+        },
+        discount: {
+           required: "Discount is required",
+           min: "Please enter value > 0"
+        },
+        interest: {
+           required: "Interest is required",
+           min: "Please enter value > 0"
+        },
+        number_months: {
+           required: "# of months is required",
+           min: "Please enter value > 0"
+        },
+        mile_per_year: {
+           required : "mile/year is required",
+           min: "Please enter value > 0"
+        },
         price_per_gallon: {
             required: "price/ gallon is required",
             min: "Please enter value > 0.05",
